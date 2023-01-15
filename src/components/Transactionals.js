@@ -1,4 +1,5 @@
 import React from "react";
+import TransactionalLi from './TransactionalLi';
 
 function Transactionals({transactions}){
 
@@ -13,15 +14,9 @@ function Transactionals({transactions}){
             </tr>
             </thead>
             <tbody>
-            {transactions.map(transaction => (
-                <tr key={transaction.id}>
-                    <td>{transaction.date}</td>
-                    <td>{transaction.category}</td>
-                    <td>{transaction.description}</td>
-                    <td>{transaction.amount}</td>
-                    </tr>
-            )
-        )}
+            {
+                <TransactionalLi transactions={transactions}/>
+            }
             </tbody>
         </table>
     )
