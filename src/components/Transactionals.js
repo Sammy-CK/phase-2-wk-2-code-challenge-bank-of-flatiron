@@ -15,7 +15,7 @@ function Transactionals({transactions}){
             </thead>
             <tbody>
             {
-                <TransactionalLi transactions={transactions}/>
+                <TransactionalLi transactions={transactions} />
             }
             </tbody>
         </table>
