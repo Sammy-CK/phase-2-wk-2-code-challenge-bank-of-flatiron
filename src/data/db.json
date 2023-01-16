@@ -118,6 +118,34 @@
       "category": "a",
       "amount": "022",
       "id": 17
+    },
+    {
+      "date": "2023-01-12",
+      "description": "s",
+      "category": "s",
+      "amount": "011",
+      "id": 18
+    },
+    {
+      "date": "2023-01-04",
+      "description": "d",
+      "category": "a",
+      "amount": 0,
+      "id": 19
+    },
+    {
+      "date": "2023-01-04",
+      "description": "d",
+      "category": "a",
+      "amount": "-40",
+      "id": 20
+    },
+    {
+      "date": "",
+      "description": "s",
+      "category": "s",
+      "amount": "01",
+      "id": 21
     }
   ]
 }

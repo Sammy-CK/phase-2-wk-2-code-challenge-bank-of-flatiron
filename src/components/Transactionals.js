@@ -1,7 +1,9 @@
 import React from "react";
 import TransactionalLi from './TransactionalLi';
 
-function Transactionals({transactions}){
+function Transactionals({transactions, searchValue}){
+
+const filteredTransactions = transactions.filter((transaction) => transaction.description.toLowerCase().includes(searchValue.toLowerCase()))
 
     return(
         <table>
@@ -15,7 +17,7 @@ function Transactionals({transactions}){
             </thead>
             <tbody>
             {
-                <TransactionalLi transactions={transactions} />
+                <TransactionalLi transactions={filteredTransactions} />
             }
             </tbody>
         </table>
