@@ -1,70 +1,60 @@
-# Getting Started with Create React App
+# Phase-2-Wk1-code-challenge-Bank of Flatiron
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Bank of Flatiron is a React application that displays a
+list of your recent bank transactions, among other features.
 
-## Available Scripts
+## Description
+Bank of Flatiron provides a record of transactions for users and the goal of this application is to:
+1. See a table of all transactions.
+2. Fill out and submit the form to add a new transaction.
+3. Filter transactions by typing into the search bar.
 
-In the project directory, you can run:
+## Built With
+- HTML
+- CSS
+- JavaScript
+- [React](https://reactjs.org/)
+- [Bootstrap](https://getbootstrap.com/)
 
-### `npm start`
+## Getting Started
+### Installation
+To use this repo on your machine requires some simple steps
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Open a terminal / command line interface on your computer
+- Clone the repo by using the following:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+          git@github.com:Sammy-CK/phase-2-wk-2-code-challenge-bank-of-flatiron.git
 
-### `npm test`
+- Be patient as it creates a copy on your local machine for you.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Change directory to the repo folder:
 
-### `npm run build`
+          cd phase-2-wk-2-code-challenge-bank-of-flatiron/data
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- In data directory run this command to get the backend started:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+        json-server --watch db.json
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Test your server by visiting this route in the browser:
 
-### `npm run eject`
+        http://localhost:3000/transactions
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Change directory to the repo folder:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+        cd phase-2-wk-2-code-challenge-bank-of-flatiron        
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Install javascript dependencies
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+        npm install
 
-## Learn More
+- Run the React app:
+        
+        npm start
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Author
+- [Sammy-CK](https://github.com/Sammy-CK)
 
-### Code Splitting
+## Lisence
+- [ISC](https://choosealicense.com/licenses/isc/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
