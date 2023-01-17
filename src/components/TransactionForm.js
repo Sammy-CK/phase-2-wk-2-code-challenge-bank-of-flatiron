@@ -28,6 +28,7 @@ function TransactionForm({
         })
           .then((resp) => resp.json())
           .then((data) => setTransactions([...transactions, data]));
+          window.location.reload();
       }}
     >
       <label htmlFor="date">Date:</label>
