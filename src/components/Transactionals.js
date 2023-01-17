@@ -8,7 +8,7 @@ const filteredTransactions = transactions.filter((transaction) => transaction.de
     return(
         <table>
             <thead>
-            <tr>
+            <tr className="transactionRow">
                 <th>Date</th>
                 <th>Category</th>
                 <th>Description</th>

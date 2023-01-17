@@ -1,4 +1,5 @@
 import React from "react";
+import '../index.css';
 
 
 function TransactionForm({newTransaction, setNewTransaction, setTransactions, transactions}){
@@ -12,7 +13,7 @@ function TransactionForm({newTransaction, setNewTransaction, setTransactions, tr
         
 
 
-        <form onSubmit={(event) => {
+        <form id="searchFormSelf" className="submitForm" onSubmit={(event) => {
             event.preventDefault();
 
 
@@ -29,10 +30,14 @@ function TransactionForm({newTransaction, setNewTransaction, setTransactions, tr
             
 
         }}>
-             <input required type="date" name="date" placeholder="date" value={newTransaction.date} onChange={(event) => updateTransactionDetails(event.target.name, event.target.value)}/>
-            <input required type="text" name="category" placeholder="category" value={newTransaction.category} onChange={(event) => updateTransactionDetails(event.target.name, event.target.value)}/>
-            <input required type="text" name="description" placeholder="description" value={newTransaction.description} onChange={(event) => updateTransactionDetails(event.target.name, event.target.value)} />
-            <input required type="number" name="amount" placeholder="amount" value={newTransaction.amount} onChange={(event) => updateTransactionDetails(event.target.name, event.target.value)} />
+            <label htmlFor="date">Date:</label>
+            <input className="contentInput" required type="date" name="date" placeholder="date"  value={newTransaction.date} onChange={(event) => updateTransactionDetails(event.target.name, event.target.value)}/>
+            <label htmlFor="category">Category:</label>
+            <input className="contentInput" required type="text" name="category" placeholder="category" value={newTransaction.category} onChange={(event) => updateTransactionDetails(event.target.name, event.target.value)}/>
+            <label htmlFor="description">Description:</label>
+            <input className="contentInput" required type="text" name="description" placeholder="description" value={newTransaction.description} onChange={(event) => updateTransactionDetails(event.target.name, event.target.value)} />
+            <label htmlFor="amount">Amount:</label>            
+            <input className="contentInput" required type="number" name="amount" placeholder="amount" value={newTransaction.amount} onChange={(event) => updateTransactionDetails(event.target.name, event.target.value)} />
             <input type="submit" />
         </form>
     )

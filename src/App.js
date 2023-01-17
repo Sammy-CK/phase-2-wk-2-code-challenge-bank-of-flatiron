@@ -3,6 +3,8 @@ import './App.css';
 import Transactionals from './components/Transactionals';
 import TransactionForm from './components/TransactionForm';
 import SearchBar from './components/SearchBar';
+import './bootstrap.css';
+import './index.css';
 
 function App() {
 
@@ -26,10 +28,10 @@ function App() {
 
 
   return (
-    <div className="App">
-      <header>USER TRANSACTION</header>
-      <SearchBar searchValue={searchValue} setSearchValue={setSearchValue} />
+    <div className="appDisplay">
+      <header className='titleHeader'>BANK OF FLATIRON TRANSACTION</header>
       <TransactionForm newTransaction={newTransaction} setNewTransaction={setNewTransaction} setTransactions={setTransactions} transactions={transactions} />
+      <SearchBar searchValue={searchValue} setSearchValue={setSearchValue} />
       <Transactionals transactions={transactions}  searchValue={searchValue}/>
     </div>
   );
