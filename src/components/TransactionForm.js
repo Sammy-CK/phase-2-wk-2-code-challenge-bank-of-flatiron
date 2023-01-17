@@ -17,22 +17,7 @@ function TransactionForm({
       className="submitForm"
       onSubmit={(event) => {
         event.preventDefault();
-
-
         setTransactions([...transactions, newTransaction])
-        event.target.reset();
-
-      //   fetch("http://localhost:3000/transactions", {
-      //     method: "POST",
-      //     headers: {
-      //       "Content-Type": "application/json",
-      //       Accept: "application/json",
-      //     },
-      //     body: JSON.stringify(newTransaction),
-      //   })
-      //     .then((resp) => resp.json())
-      //     .then((data) => );
-      //     window.location.reload();
       }}
     >
       <label htmlFor="date">Date:</label>
