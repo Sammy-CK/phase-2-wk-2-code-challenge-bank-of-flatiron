@@ -37,18 +37,6 @@ To use this repo on your machine requires some simple steps
 
 - Change directory to the repo folder:
 
-          cd phase-2-wk-2-code-challenge-bank-of-flatiron/data
-
-- In data directory run this command to get the backend started:
-
-        json-server --watch db.json
-
-- Test your server by visiting this route in the browser:
-
-        http://localhost:3000/transactions
-
-- Change directory to the repo folder:
-
         cd phase-2-wk-2-code-challenge-bank-of-flatiron        
 
 - Install javascript dependencies
