@@ -17,6 +17,14 @@ Bank of Flatiron provides a record of transactions for users and the goal of thi
 - [Bootstrap](https://getbootstrap.com/)
 
 ## Getting Started
+
+## Alternative One
+Use netlify  to check out website and perform operations from there.The link is:
+
+                https://resonant-creponne-c124fd.netlify.app/
+
+## Alternative Two
+
 ### Installation
 To use this repo on your machine requires some simple steps
 
