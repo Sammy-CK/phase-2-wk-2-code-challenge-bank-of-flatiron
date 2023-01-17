@@ -17,7 +17,14 @@ function TransactionForm({
       className="submitForm"
       onSubmit={(event) => {
         event.preventDefault();
-        setTransactions([...transactions, newTransaction])
+        setTransactions([...transactions, newTransaction]);
+
+        setNewTransaction({
+          date: "",
+          description: "",
+          category: "",
+          amount: 0,
+        });
       }}
     >
       <label htmlFor="date">Date:</label>
