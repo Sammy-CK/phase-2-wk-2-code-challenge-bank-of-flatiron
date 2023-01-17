@@ -17,10 +17,10 @@ function App() {
   const [searchValue, setSearchValue] = useState("");
 
   useEffect(() => {
-    fetch("http://localhost:3000/transactions")
+    fetch("https://sammy-ck.github.io/db.json")
       .then((resp) => resp.json())
       .then((data) => {
-        setTransactions(data);
+        setTransactions(data.transactions);
       });
   }, []);
 
